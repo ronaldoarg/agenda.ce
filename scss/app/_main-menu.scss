@@ -1,0 +1,178 @@
+//** Styles from main menu
+.main-menu {
+    background-color: #fff;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: 10; 
+    .more {
+        float: left;
+        padding: 10px 5px;
+        text-align: center;
+        width: 8%;
+        border-left: 1px solid $gray-lighter;
+        .icon {
+            margin: 0 auto .25rem;
+            font-size: 1.4rem;
+            line-height: $line-height-base;
+            border-radius: $border-radius-base;
+        }
+    }
+    > .menu-item {
+        list-style-type: none;
+        float: left;
+        box-sizing: border-box;
+        height: 52px;
+        padding: .25rem;
+        position: relative;
+        width: 23%;
+        text-align: center;
+        border-top: 3px solid;
+        
+        border-left: 1px solid $gray-lighter;
+        .elegant-icon {
+            margin: 0 auto .25rem;
+            font-size: 1.1rem;
+            line-height: $line-height-base;
+            border-radius: $border-radius-base;
+        }
+        .label {
+            display: block;
+            font-size: 12px;
+            line-height: $line-height-small;
+        }
+        &:first-child {
+            border-left: none;
+        }
+        &.active {
+            .label {
+                display: none;
+            }
+            &:after {
+                top: 42px;
+                left: 50%;
+                margin-left: -8px;
+            }
+        }
+
+        //** Events
+        &.menu-event {
+            
+            border-top-color: $brand-event;
+            &.active {
+                color: $brand-event;
+                a {
+                    color: $brand-event;
+                }
+                &:after {
+                    @include arrow(up, $caret-width-base, $brand-event);
+                }
+            }
+        }
+        //** Agents
+        &.menu-agent {
+            border-top-color: $brand-agent;
+            &.active {
+                color: $brand-agent;
+                a {
+                    color: $brand-agent;
+                }
+                &:after {
+                    @include arrow(up, $caret-width-base, $brand-agent);
+                }
+            }
+        }
+        //** Spaces
+        &.menu-space {
+            border-top-color: $brand-space;
+            &.active {
+                color: $brand-space;
+                a {
+                    color: $brand-space;
+                }
+                &:after {
+                    @include arrow(up, $caret-width-base, $brand-space);
+                }
+            }
+        }
+        //** Projects
+        &.menu-project {
+            border-top-color: $brand-project;
+            &.active {
+                color: $brand-project;
+                a {
+                    color: $brand-project;
+                }
+                &:after {
+                    @include arrow(up, $caret-width-base, $brand-project);
+                }
+            }
+        }
+
+        //** Map
+        &.menu-map {
+            border-top-color: $brand-map;
+            &.active {
+                color: $brand-map;
+                a {
+                    color: $brand-map;
+                }
+                &:after {
+                    @include arrow(up, $caret-width-base, $brand-map);
+                }
+            }
+        }
+
+        //** Favorite
+        &.menu-favorite {
+            border-top-color: $brand-favorite;
+            &.active {
+                color: $brand-favorite;
+                a {
+                    color: $brand-favorite;
+                }
+                &:after {
+                    @include arrow(up, $caret-width-base, $brand-favorite);
+                }
+            }
+        }
+
+        //** More
+        &.menu-more {
+            border-top-color: $brand-default;
+            color: $brand-default;
+            a {
+                color: $brand-default;
+            }
+            &.active {
+                &:after {
+                    @include arrow(up, $caret-width-base, $brand-default);
+                }
+            }
+        }
+    }
+}
+
+// .menu-more dropdown 
+
+.menu-more-dropdown {
+    background: #fff;
+    border: 1px solid $gray-lighter;
+    font-size:  $font-size-small;
+    line-height: $line-height-large;
+    text-align: right;
+    position: absolute;
+    top: 53px;
+    right: 0px;
+    z-index:10000;    
+
+    li {
+        border-bottom: 1px solid $gray-lighter;
+        font-weight: bold;
+        padding: $padding-large-vertical $padding-large-horizontal;
+        text-transform: lowercase;
+        &:last-child {
+            border: 0;
+        }
+    }
+}

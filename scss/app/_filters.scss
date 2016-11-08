@@ -1,0 +1,142 @@
+.show-filters {
+    font-size: $font-size-large;
+    top: 11px;
+    right: $padding-small-vertical;
+    position: absolute;
+    z-index: 10;
+    div {
+        margin: -10px;
+        padding: 10px;
+    }
+}
+
+.filters-modal {
+    position: absolute;
+    top: 43px;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 10000;
+
+    .list {
+        background: transparent;
+        margin: 0; 
+
+        &.list-date {
+            display: table;
+            width: 100%;
+            .input-label {
+                padding-right: 40px;
+            }
+            .text {
+                padding-right: 10px;
+            }
+            .box {
+                display: table-cell;
+                vertical-align: middle;
+            }
+            span {
+                font-weight: bold;
+            }
+            input {
+                background: #fff;
+                font-size: 11px;
+                width: 100px;
+            }
+            span, input {
+                display: inline-block;
+            }
+            
+        }
+    }
+
+    .item {
+        border-bottom: 1px solid $gray-lighter;
+        font-size: $font-size-small;
+        line-height: $line-height-small;
+        margin: 0;
+
+        h2 {
+            border-bottom: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        &.item-toggle {
+            min-height: 52px;
+
+            .input-label {
+                padding-top: 10px;
+            }
+        }
+    }
+
+    .input-label, select, input {
+        font-size: $font-size-small;
+        line-height: $line-height-small;
+    }
+
+    .input-label {
+        display: flex;
+        font-weight: bold;
+    }
+
+    select {
+        display: flex;
+    }
+
+    .button-bar {
+        border-bottom: 3px solid #000;
+        a.button .icon:before, a.button.icon-left:before,
+        a.button.icon-right:before, a.button.icon:before {
+            margin-top: 0;
+        }
+        .button {
+            padding-bottom: $padding-large-vertical;
+            padding-top: $padding-large-vertical;
+        }
+    }
+}
+
+.search-input {
+    margin: -6px 0;
+    background: transparent;
+    padding: 0;
+    width: 300px;
+}
+
+.event .search-input, .space .search-input {
+    input {
+        color: black;
+        background: transparent;
+    }
+    i {
+        color: black;
+    }
+    input::-webkit-input-placeholder {
+        color: black;
+    }
+}
+
+// Hide search button
+.search-btn {
+    position: absolute;
+    left:-9000px;
+}
+
+// Modal transparent background
+.filters-background {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 100px;
+    background: rgba(0,0,0,.6);
+}
+
+// Hide modal background on singles pages
+.single {
+    .filters-background {
+        display: none;
+    }
+}

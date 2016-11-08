@@ -1,0 +1,32 @@
+.header {
+    background-color: $gray; 
+    min-height: 43px;
+    padding: $padding-large-vertical;
+    position: absolute;
+    width: 100%;
+    top: 52px;
+    z-index: 10;
+    &.event {
+        background-color: $brand-event;
+    }
+    &.space {
+        background-color: $brand-space;
+    }
+    &.favorite {
+        background-color: $brand-favorite;
+    }
+    &.agent {
+        background-color: $brand-agent;
+    }
+    &.project {
+        background-color: $brand-project;
+    }
+    &.map {
+        background-color: $brand-map;
+    }
+    .name {
+        font-size: $font-size-base;
+        float: left;
+        line-height: 1.8;
+    }
+}

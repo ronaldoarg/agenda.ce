@@ -1,0 +1,53 @@
+//
+// Base
+// -------------------------------
+
+//** Load fonts from this directory.
+$font-path:                    '../fonts/' !default;
+
+$font-family-sans-serif:       'Open Sans' !default;
+
+$font-family-light-sans-serif: 'Open Sans' !default;
+
+//** Font file names and svg ids
+$font-regular-name:         'OpenSans-Regular-webfont' !default;
+$font-regular-svg-id:       'open_sansregular' !default;
+$font-italic-name:          'OpenSans-Italic-webfont' !default;
+$font-italic-svg-id:        'open_sansitalic' !default;
+$font-bold-name:            'OpenSans-Bold-webfont' !default;
+$font-bold-svg-id:          'open_sansbold' !default;
+$font-bolditalic-name:      'OpenSans-BoldItalic-webfont' !default;
+$font-bolditalic-svg-id:    'open_sansbold_italic' !default;
+
+//** Default font stack
+$font-stack-base:           $font-family-sans-serif !default;
+$font-family-base:          $font-family-sans-serif !default;
+
+//** Headings font family name
+$headings-font-family:      'aleo' !default;
+
+//** Headings font file name
+$headings-font-name:        'aleo-regular-webfont' !default;
+$headings-font-svg-id:      'aleoregular' !default;
+
+//== Iconography
+//
+//## Specify custom location and filename of the included ElegantIcons icon font.
+//** Load fonts from this directory.
+$icon-font-path:            $font-path !default;
+//** Icon font family name
+$icon-font-family:          'ElegantIcons' !default;
+//** File name for all font files.
+$icon-font-name:            'ElegantIcons' !default;
+//** Element ID within SVG icon file.
+$icon-font-svg-id:          'ElegantIcons' !default;
+
+$ionicons-font-path:        "../lib/ionic/fonts/" !default;
+
+$line-height-base:                1.5  !default;
+$line-height-large:               2    !default;
+$line-height-small:               1    !default;
+
+$font-size-base:                  15px !default;
+$font-size-large:                 18px !default;
+$font-size-small:                 13px !default;

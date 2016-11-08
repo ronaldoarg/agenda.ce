@@ -1,0 +1,116 @@
+.single {
+    .img {
+        width: 100%;
+    }
+    .list {
+        .header {
+            margin: $padding-base-horizontal 0;
+            position: relative;
+            top: 0;
+        }
+        .filters-modal {
+            margin: -10px;
+            position: static;
+            margin-top: 35px;
+            top: 0;
+            .list {
+                margin-top: 0;
+            }
+        }
+    }
+    .spaces {
+        margin-top: $padding-large-vertical;
+        .list {
+            background: transparent;
+        }
+        .item {
+            display: table;
+            padding: 0;
+        }
+        .make-favorite {
+            display: table-cell;
+            vertical-align: top;
+        }
+        .ocurrences {
+            font-weight: bold;
+            display: table-cell;
+            vertical-align: top;
+        }
+    }
+    .events {
+        margin: 10px -10px;
+        .schedule-title {
+            margin: $padding-large-vertical 0; 
+            padding: $padding-large-vertical;
+        }
+        .list {
+            margin-top: 6px;
+        }
+    }
+}
+
+.single-tabs {
+    background: #fff;
+    display: table;
+    margin-top: $padding-large-vertical;   
+    width: 100%;
+    .tab {
+        border-bottom: 3px solid #666;
+        border-left: 1px solid $gray-lighter;
+        color: #666;
+        display: table-cell;
+        font-family: "Open Sans";
+        font-size: 11px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding: $padding-large-vertical 0;
+        text-align: center;
+        text-transform: uppercase;
+        &:first-child {
+            border-left: none;
+        }
+        &.tab-event.active {
+            border-bottom-color: $brand-event;
+            color: $brand-event;
+        }
+        &.tab-agent.active {
+            border-bottom-color: $brand-agent; 
+            color: $brand-agent;
+        }
+        &.tab-project.active {
+            border-bottom-color: $brand-project; 
+            color: $brand-project;
+        }
+        &.tab-space.active {
+            border-bottom-color: $brand-space; 
+            color: $brand-space;
+        }
+    }
+}
+
+.about {
+    color: $gray-darker;
+    font-size: $font-size-small;
+    line-height: $line-height-large;
+}
+
+.config {
+    label {
+        font-size: $font-size-small;
+        line-height: $line-height-small;
+        white-space: initial;
+    }
+    .item-select {
+        padding: 0;
+        select {
+            direction: ltr;
+            font-size: $font-size-small;
+            line-height: $line-height-large;
+            padding-left: 0;
+            position: relative;
+            margin-top: 10px;
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+}
